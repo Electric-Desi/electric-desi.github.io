@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
+.dates li {
+  font-size: 1.5em;
+  line-height: 1.2em; /* Adjust this value as needed */
+  margin-bottom: 10px; /* Add some space between the list items */
+}
+
+
 html,
 body,
 div,
