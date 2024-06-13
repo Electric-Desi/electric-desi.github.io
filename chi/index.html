@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electric Desi Chicago</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <meta property="og:title" content="Electric Desi Tour">
+    <meta property="og:description" content="Chicago Tickets">
+    <meta property="og:image" content="../assets/css/images/coverphoto.jpeg">
+    <meta property="og:url" content="https://electricdesitour.com/chi">
+    <meta property="og:type" content="website">
+    <meta http-equiv="refresh" content="0;url=https://flite.city/e/electric-desi-rave?t=flite"/>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+        <!-- Header -->
+        <header id="header">
+          <h1>Redirecting...</h1>
+          <p>You are being redirected to <a href="https://flite.city/e/electric-desi-rave?t=flite">flite.city</a>. If you are not redirected automatically, follow the <a href="https://flite.city/e/electric-desi-rave?t=flitem">link</a>.</p>
+        </header>
+
+        <!-- Footer -->
+        <footer id="footer">
+          <span class="copyright">&copy; Electric Desi 2024. Website by Nickhil Tekwani.</span>
+        </footer>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        document.body.classList.remove("is-preload");
+      };
+    </script>
+    <script>
+      window.onload = function() {
+        // Images for screens wider than 768px
+        var desktopImages = [
+          "../assets/css/images/backgrounds/Horizontal1.jpeg",
+          "../assets/css/images/backgrounds/Horizontal2.jpeg",
+          "../assets/css/images/backgrounds/Horizontal3.jpeg",
+          "../assets/css/images/backgrounds/Horizontal4.jpeg",
+          "../assets/css/images/backgrounds/Horizontal5.jpg"
+        ];
+    
+        // Images for screens smaller than 768px
+        var mobileImages = [
+          "../assets/css/images/backgrounds/vertical/1.jpg",
+          "../assets/css/images/backgrounds/vertical/2.jpg",
+          "../assets/css/images/backgrounds/vertical/3.jpg",
+          "../assets/css/images/backgrounds/vertical/4.jpg",
+        ];
+    
+        // Check screen width and select the appropriate image array
+        var images = window.innerWidth >= 768 ? desktopImages : mobileImages;
+    
+        // Function to select a random image
+        var imageIndex = Math.floor(Math.random() * images.length);
+        var selectedImage = images[imageIndex];
+    
+        // Set the background image
+        document.getElementById('bg').style.backgroundImage = 'url(' + selectedImage + ')';
+    
+        // Remove preload class
+        document.body.classList.remove("is-preload");
+      };
+    
+      // Optional: Adjust the background image if the window is resized
+      window.onresize = function() {
+        var images = window.innerWidth >= 768 ? desktopImages : mobileImages;
+        var imageIndex = Math.floor(Math.random() * images.length);
+        var selectedImage = images[imageIndex];
+        document.getElementById('bg').style.backgroundImage = 'url(' + selectedImage + ')';
+      };
+    </script>
+  </body>
+</html>
